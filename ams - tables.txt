@@ -1,0 +1,38 @@
+CREATE TABLE student (
+    student_id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    email VARCHAR(100),
+    phone_number VARCHAR(20),
+    address VARCHAR(255)
+);
+
+
+CREATE TABLE user (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(50),
+    password VARCHAR(200),
+    role VARCHAR(20)
+);
+
+CREATE TABLE attendance (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    date_dt date,
+    email VARCHAR(50),
+    status VARCHAR(20),
+    branch VARCHAR(50),
+    semester VARCHAR(50),
+    subject VARCHAR(50)
+);
+
+CREATE TABLE faculty (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    email VARCHAR(100),
+    phone_number VARCHAR(20),
+    address VARCHAR(255)
+);
+
+
+
